@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Checklist</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Property Scraper Checklist</h1>
+    </header>
+
+    <section id="addProperty">
+        <h2>Add Property Listing</h2>
+        <input type="url" id="propertyURL" placeholder="Enter Property Listing URL" class="md-input">
+        <div id="propertyForm">
+            <input type="text" id="propertyName" placeholder="Enter Property Name" class="md-input">
+            <button onclick="createChecklist()" class="md-button">Create Checklist</button>
+        </div>
+    </section>
+
+    <section id="propertySection">
+        <h2>Properties Checklist</h2>
+        <div id="checklistContainer"></div>
+        <div class="buttons">
+            <button onclick="saveChecklistToFile()" class="md-button">Save Checklist</button>
+            <button onclick="loadChecklistFromFile()" class="md-button">Load Checklist</button>
+        </div>
+    </section>
+    
+
+    <section id="links">
+        <h2>Common Pages</h2>
+        <a href="commonThings.html" class="md-link">Common Functions | XPath | Regex</a> 
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

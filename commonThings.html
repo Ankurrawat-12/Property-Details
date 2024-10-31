@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Functions, Regex & XPath</title>
+    <link rel="stylesheet" href="commonThings.css">
+</head>
+<body>
+
+<header>
+    <h1>Common Functions, Regex & XPath</h1>
+</header>
+
+<section id="functions-section">
+    <h2>Functions</h2>
+    <div id="functions-list"></div>
+    <button class="add-new" onclick="addNewItem('function')">Add New Function</button>
+</section>
+
+<section id="regex-section">
+    <h2>Regex Patterns</h2>
+    <div id="regex-list"></div>
+    <button class="add-new" onclick="addNewItem('regex')">Add New Regex</button>
+</section>
+
+<section id="xpaths-section">
+    <h2>XPath Expressions</h2>
+    <div id="xpaths-list"></div>
+    <button class="add-new" onclick="addNewItem('xpath')">Add New XPath</button>
+</section>
+
+<!-- Pop-up Notification -->
+<div id="popup" class="hidden"></div>
+
+<!-- Modal for Adding New Items -->
+<div id="modal">
+    <div id="modal-content">
+        <h3 id="modal-title">Add New Item</h3>
+        <input type="text" id="modal-name" placeholder="Enter name" />
+        <textarea id="modal-code" placeholder="Enter code or pattern"></textarea>
+        <input type="hidden" id="modal-type" />
+        <button id="modal-submit">Submit</button>
+        <button id="modal-close">Close</button>
+    </div>
+</div>
+
+<script src="commonThings.js"></script>
+
+</body>
+</html>
